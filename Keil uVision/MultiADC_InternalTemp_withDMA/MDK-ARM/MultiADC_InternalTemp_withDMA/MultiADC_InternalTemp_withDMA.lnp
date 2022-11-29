@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"multiadc_internaltemp_withdma\startup_stm32f429xx.o"
+"multiadc_internaltemp_withdma\main.o"
+"multiadc_internaltemp_withdma\stm32f4xx_it.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_msp.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_adc.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_adc_ex.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_rcc.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_rcc_ex.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_flash.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_flash_ex.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_flash_ramfunc.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_gpio.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_dma_ex.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_dma.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_pwr.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_pwr_ex.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_cortex.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_exti.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_tim.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_tim_ex.o"
+"multiadc_internaltemp_withdma\stm32f4xx_hal_uart.o"
+"multiadc_internaltemp_withdma\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "MultiADC_InternalTemp_withDMA\MultiADC_InternalTemp_withDMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MultiADC_InternalTemp_withDMA.map" -o MultiADC_InternalTemp_withDMA\MultiADC_InternalTemp_withDMA.axf

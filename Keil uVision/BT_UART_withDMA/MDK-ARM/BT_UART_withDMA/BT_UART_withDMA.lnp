@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"bt_uart_withdma\startup_stm32f429xx.o"
+"bt_uart_withdma\main.o"
+"bt_uart_withdma\stm32f4xx_it.o"
+"bt_uart_withdma\stm32f4xx_hal_msp.o"
+"bt_uart_withdma\stm32f4xx_hal_tim.o"
+"bt_uart_withdma\stm32f4xx_hal_tim_ex.o"
+"bt_uart_withdma\stm32f4xx_hal_uart.o"
+"bt_uart_withdma\stm32f4xx_hal_rcc.o"
+"bt_uart_withdma\stm32f4xx_hal_rcc_ex.o"
+"bt_uart_withdma\stm32f4xx_hal_flash.o"
+"bt_uart_withdma\stm32f4xx_hal_flash_ex.o"
+"bt_uart_withdma\stm32f4xx_hal_flash_ramfunc.o"
+"bt_uart_withdma\stm32f4xx_hal_gpio.o"
+"bt_uart_withdma\stm32f4xx_hal_dma_ex.o"
+"bt_uart_withdma\stm32f4xx_hal_dma.o"
+"bt_uart_withdma\stm32f4xx_hal_pwr.o"
+"bt_uart_withdma\stm32f4xx_hal_pwr_ex.o"
+"bt_uart_withdma\stm32f4xx_hal_cortex.o"
+"bt_uart_withdma\stm32f4xx_hal.o"
+"bt_uart_withdma\stm32f4xx_hal_exti.o"
+"bt_uart_withdma\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "BT_UART_withDMA\BT_UART_withDMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BT_UART_withDMA.map" -o BT_UART_withDMA\BT_UART_withDMA.axf

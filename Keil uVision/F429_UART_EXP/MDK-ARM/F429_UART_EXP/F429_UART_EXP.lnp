@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"f429_uart_exp\startup_stm32f429xx.o"
+"f429_uart_exp\main.o"
+"f429_uart_exp\stm32f4xx_it.o"
+"f429_uart_exp\stm32f4xx_hal_msp.o"
+"f429_uart_exp\stm32f4xx_hal_tim.o"
+"f429_uart_exp\stm32f4xx_hal_tim_ex.o"
+"f429_uart_exp\stm32f4xx_hal_uart.o"
+"f429_uart_exp\stm32f4xx_hal_rcc.o"
+"f429_uart_exp\stm32f4xx_hal_rcc_ex.o"
+"f429_uart_exp\stm32f4xx_hal_flash.o"
+"f429_uart_exp\stm32f4xx_hal_flash_ex.o"
+"f429_uart_exp\stm32f4xx_hal_flash_ramfunc.o"
+"f429_uart_exp\stm32f4xx_hal_gpio.o"
+"f429_uart_exp\stm32f4xx_hal_dma_ex.o"
+"f429_uart_exp\stm32f4xx_hal_dma.o"
+"f429_uart_exp\stm32f4xx_hal_pwr.o"
+"f429_uart_exp\stm32f4xx_hal_pwr_ex.o"
+"f429_uart_exp\stm32f4xx_hal_cortex.o"
+"f429_uart_exp\stm32f4xx_hal.o"
+"f429_uart_exp\stm32f4xx_hal_exti.o"
+"f429_uart_exp\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "F429_UART_EXP\F429_UART_EXP.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "F429_UART_EXP.map" -o F429_UART_EXP\F429_UART_EXP.axf

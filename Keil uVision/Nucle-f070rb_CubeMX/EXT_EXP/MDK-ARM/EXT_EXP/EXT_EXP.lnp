@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+"ext_exp\startup_stm32f070xb.o"
+"ext_exp\main.o"
+"ext_exp\stm32f0xx_it.o"
+"ext_exp\stm32f0xx_hal_msp.o"
+"ext_exp\stm32f0xx_hal_tim.o"
+"ext_exp\stm32f0xx_hal_tim_ex.o"
+"ext_exp\stm32f0xx_hal_rcc.o"
+"ext_exp\stm32f0xx_hal_rcc_ex.o"
+"ext_exp\stm32f0xx_hal.o"
+"ext_exp\stm32f0xx_hal_i2c.o"
+"ext_exp\stm32f0xx_hal_i2c_ex.o"
+"ext_exp\stm32f0xx_hal_gpio.o"
+"ext_exp\stm32f0xx_hal_dma.o"
+"ext_exp\stm32f0xx_hal_cortex.o"
+"ext_exp\stm32f0xx_hal_pwr.o"
+"ext_exp\stm32f0xx_hal_pwr_ex.o"
+"ext_exp\stm32f0xx_hal_flash.o"
+"ext_exp\stm32f0xx_hal_flash_ex.o"
+"ext_exp\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "EXT_EXP\EXT_EXP.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EXT_EXP.map" -o EXT_EXP\EXT_EXP.axf

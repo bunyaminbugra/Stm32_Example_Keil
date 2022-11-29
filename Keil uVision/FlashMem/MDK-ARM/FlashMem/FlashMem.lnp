@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"flashmem\startup_stm32f429xx.o"
+"flashmem\main.o"
+"flashmem\stm32f4xx_it.o"
+"flashmem\stm32f4xx_hal_msp.o"
+"flashmem\stm32f4xx_hal_tim.o"
+"flashmem\stm32f4xx_hal_tim_ex.o"
+"flashmem\stm32f4xx_hal_rcc.o"
+"flashmem\stm32f4xx_hal_rcc_ex.o"
+"flashmem\stm32f4xx_hal_flash.o"
+"flashmem\stm32f4xx_hal_flash_ex.o"
+"flashmem\stm32f4xx_hal_flash_ramfunc.o"
+"flashmem\stm32f4xx_hal_gpio.o"
+"flashmem\stm32f4xx_hal_dma_ex.o"
+"flashmem\stm32f4xx_hal_dma.o"
+"flashmem\stm32f4xx_hal_pwr.o"
+"flashmem\stm32f4xx_hal_pwr_ex.o"
+"flashmem\stm32f4xx_hal_cortex.o"
+"flashmem\stm32f4xx_hal.o"
+"flashmem\stm32f4xx_hal_exti.o"
+"flashmem\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "FlashMem\FlashMem.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FlashMem.map" -o FlashMem\FlashMem.axf

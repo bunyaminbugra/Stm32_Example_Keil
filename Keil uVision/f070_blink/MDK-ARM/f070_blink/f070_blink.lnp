@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"f070_blink\startup_stm32f070xb.o"
+"f070_blink\main.o"
+"f070_blink\stm32f0xx_it.o"
+"f070_blink\stm32f0xx_hal_msp.o"
+"f070_blink\stm32f0xx_hal_tim.o"
+"f070_blink\stm32f0xx_hal_tim_ex.o"
+"f070_blink\stm32f0xx_hal_rcc.o"
+"f070_blink\stm32f0xx_hal_rcc_ex.o"
+"f070_blink\stm32f0xx_hal.o"
+"f070_blink\stm32f0xx_hal_i2c.o"
+"f070_blink\stm32f0xx_hal_i2c_ex.o"
+"f070_blink\stm32f0xx_hal_gpio.o"
+"f070_blink\stm32f0xx_hal_dma.o"
+"f070_blink\stm32f0xx_hal_cortex.o"
+"f070_blink\stm32f0xx_hal_pwr.o"
+"f070_blink\stm32f0xx_hal_pwr_ex.o"
+"f070_blink\stm32f0xx_hal_flash.o"
+"f070_blink\stm32f0xx_hal_flash_ex.o"
+"f070_blink\stm32f0xx_hal_exti.o"
+"f070_blink\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "f070_blink\f070_blink.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "f070_blink.map" -o f070_blink\f070_blink.axf

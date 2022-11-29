@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"bluetooth_it\startup_stm32f429xx.o"
+"bluetooth_it\main.o"
+"bluetooth_it\stm32f4xx_it.o"
+"bluetooth_it\stm32f4xx_hal_msp.o"
+"bluetooth_it\stm32f4xx_hal_tim.o"
+"bluetooth_it\stm32f4xx_hal_tim_ex.o"
+"bluetooth_it\stm32f4xx_hal_uart.o"
+"bluetooth_it\stm32f4xx_hal_rcc.o"
+"bluetooth_it\stm32f4xx_hal_rcc_ex.o"
+"bluetooth_it\stm32f4xx_hal_flash.o"
+"bluetooth_it\stm32f4xx_hal_flash_ex.o"
+"bluetooth_it\stm32f4xx_hal_flash_ramfunc.o"
+"bluetooth_it\stm32f4xx_hal_gpio.o"
+"bluetooth_it\stm32f4xx_hal_dma_ex.o"
+"bluetooth_it\stm32f4xx_hal_dma.o"
+"bluetooth_it\stm32f4xx_hal_pwr.o"
+"bluetooth_it\stm32f4xx_hal_pwr_ex.o"
+"bluetooth_it\stm32f4xx_hal_cortex.o"
+"bluetooth_it\stm32f4xx_hal.o"
+"bluetooth_it\stm32f4xx_hal_exti.o"
+"bluetooth_it\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Bluetooth_IT\Bluetooth_IT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bluetooth_IT.map" -o Bluetooth_IT\Bluetooth_IT.axf

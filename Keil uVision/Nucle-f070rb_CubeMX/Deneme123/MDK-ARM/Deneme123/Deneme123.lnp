@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+"deneme123\startup_stm32f070xb.o"
+"deneme123\main.o"
+"deneme123\stm32f0xx_it.o"
+"deneme123\stm32f0xx_hal_msp.o"
+"deneme123\stm32f0xx_hal_tim.o"
+"deneme123\stm32f0xx_hal_tim_ex.o"
+"deneme123\stm32f0xx_hal_rcc.o"
+"deneme123\stm32f0xx_hal_rcc_ex.o"
+"deneme123\stm32f0xx_hal.o"
+"deneme123\stm32f0xx_hal_i2c.o"
+"deneme123\stm32f0xx_hal_i2c_ex.o"
+"deneme123\stm32f0xx_hal_gpio.o"
+"deneme123\stm32f0xx_hal_dma.o"
+"deneme123\stm32f0xx_hal_cortex.o"
+"deneme123\stm32f0xx_hal_pwr.o"
+"deneme123\stm32f0xx_hal_pwr_ex.o"
+"deneme123\stm32f0xx_hal_flash.o"
+"deneme123\stm32f0xx_hal_flash_ex.o"
+"deneme123\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "Deneme123\Deneme123.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Deneme123.map" -o Deneme123\Deneme123.axf
